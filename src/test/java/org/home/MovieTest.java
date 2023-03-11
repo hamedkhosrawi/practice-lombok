@@ -117,4 +117,11 @@ class MovieTest {
         movie.setLanguage("FA");
         assertEquals("FA", movie.getLanguage());
     }
+    @Test
+    void testGetMinutes(){
+        int minutesPlusX = movie.getMinutesPlusX(1);
+        assertNotNull(minutesPlusX);
+        assertEquals(121,minutesPlusX);
+
+    }
 }
