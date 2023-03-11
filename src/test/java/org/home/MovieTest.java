@@ -14,14 +14,16 @@ class MovieTest {
 
     @BeforeEach
     void setUp() throws MalformedURLException {
-        movie = new Movie();
+        movie = Movie.builder().title("Lord of the Rings").country("IRAN").officialSite(new URL("https://localhost")).language("persian").id(1L).description("This film all about Rings")
+                .rating(8).build();
+        /*movie = new Movie();
         movie.setTitle("Lord of the Rings");
         movie.setCountry("IRAN");
         movie.setOfficialSite(new URL("https://localhost"));
         movie.setLanguage("persian");
         movie.setId(1L);
         movie.setDescription("This film all about Rings");
-        movie.setRating(8);
+        movie.setRating(8);*/
 
     }
 
