@@ -12,6 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @RequiredArgsConstructor
 @Builder(toBuilder = true)
+@EqualsAndHashCode
 @CustomLog
 public class Movie {
 
